@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validation.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body class="rating">
+    <header>
+        <h1 class="logo">QClean</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="rating.html">Ratings</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="butn"><button class="header">Login</button></a>
+    </header>
+
+    <div class="box">
+        <strong>Berikan Rating QClean</strong><br>
+        <form action=""id="formrating">
+            <div class="bintang" >
+                <input type="radio" name="star" id="star1" id="bintang"><label for="star1"></label>
+                <input type="radio" name="star" id="star2"><label for="star2"></label>
+                <input type="radio" name="star" id="star3"><label for="star3"></label>
+                <input type="radio" name="star" id="star4"><label for="star4"></label>
+                <input type="radio" name="star" id="star5"><label for="star5"></label>
+            </div>
+            <div class="alasan">
+                <textarea placeholder="Alasan..." id="alasan" name="alasan"></textarea><br>
+                <input type="button" value="Submit" onclick="validation4()">
+            </div>
+
+        </form>
+    </div>
+
+    <hr class="footer">
+    <footer>
+        <div class="footertext">
+            &copy; QClean CO. , LTD. 2020 ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+</body>
+</html>

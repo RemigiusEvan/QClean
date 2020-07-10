@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script src="https://kit.fontawesome.com/de4f0c71b9.js" crossorigin="anonymous"></script>
+    <script src="js/validation.js"></script>
+</head>
+<body>
+    <a href="index.html"><h2 class="title">QClean</h2></a>
+	<div class="form-content">
+		<form action="" id="formdaftar">
+            <section class="tulisan">
+                <span>Daftar</span>
+                <p>Punya akun? <a href="login.html">Login</a></p>
+            </section>
+            <div class="input-div one">
+           	   <div class="i">
+           	   </div>
+           	   <div class="div">
+           		    <label for="fullName">Nama</label>
+           		    <input type="text" id="fullName" class="input" name="fullName">
+           	   </div>
+            </div>
+        	<div class="input-div one">
+           	   <div class="i">
+           	   </div>
+           	   <div class="div">
+           		    <label>Username</label>
+           		    <input type="text" id="username" class="input" name="username">
+           	   </div>
+            </div>
+            <div class="input-div pass">
+                 <div class="i"> 
+                  </div>
+                <div class="div">
+                    <label>Password</label>
+                    <input type="password" id="password" class="input" name="password">
+              </div>
+            </div>
+            <div class="gender">
+                <label for="gender"><b>Gender  </b></label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+            <div class="date">
+                <div class="i">
+                </div>
+                <div>
+                     <label>Tanggal Lahir</label>
+                     <input type="date" class="input" name="date" id="name">
+                </div>
+            </div>
+            <div class="input-div pass">
+                <div class="i"> 
+                 </div>
+                <div class="div">
+                   <label>Email</label>
+                   <input type="email" class="input" name="email" id="email">
+                 </div>
+             </div>
+            <br>
+            <div id="agreementDiv">
+                <input type="checkbox" id="agreement" name="agreement">
+                <label for="agreement">I agree to QClean Terms of Service and Privacy Policy</label>
+            </div>
+            <input type="button" class="btn" value="Submit"  onclick="validation()">
+         </form>
+     </div>
+     <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

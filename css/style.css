@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+li, a, button {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #24252a;
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 6em;
+  background-color: #B4FADC;
+}
+
+header h1.logo {
+  cursor: pointer;
+  margin-right: auto;
+  font-size: 1.5em;
+  color: #0377A8;
+}
+
+header .nav-links {
+  list-style: none;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+header .nav-links li {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+header .nav-links li a:hover {
+  color: #0088a9;
+}
+
+header button {
+  padding: 0.2em 0.9em;
+  background-color: #27cbf5;
+  border: none;
+  border-radius: 1.2em;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  margin-left: 0.9em;
+  font-size: 0.8;
+}
+
+header button:hover {
+  background-color: rgba(39, 204, 245, 0.772);
+}
+
+.hero {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: fadein 2 forwards;
+          animation: fadein 2 forwards;
+}
+
+.hero .caption {
+  margin: 1em 3em;
+}
+
+.hero .caption h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #0377A8;
+}
+
+.hero img {
+  height: 90vh;
+  margin: 1em;
+}
+
+.hero button {
+  background-color: #27cbf5;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  font-size: .8em;
+  width: 160px;
+  height: 40px;
+}
+
+.hero button:hover {
+  background-color: rgba(39, 204, 245, 0.772);
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+hr {
+  width: 75%;
+  border: solid 5px #0377A8;
+  border-radius: 10px;
+}
+
+.subtitle {
+  margin: 2em;
+  padding: 2em 10%;
+  text-align: center;
+}
+
+.subtitle strong {
+  font-size: 3em;
+  color: #0377A8;
+}
+
+.subtitle p {
+  font-size: 1.5em;
+}
+
+.about {
+  margin: 2em;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about img {
+  width: 100vh;
+}
+
+.about h1 {
+  color: #0377A8;
+}
+
+.about .content {
+  padding: 2em;
+  margin: 2em;
+}
+
+.layanan {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: .5em;
+  font-size: 1.3em;
+}
+
+.layanan ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.layanan h1 {
+  color: #0377A8;
+}
+
+.layanan .services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(130px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2em;
+  text-align: center;
+}
+
+.layanan .services strong {
+  display: block;
+  padding: 16px;
+}
+
+.layanan .services span {
+  display: block;
+}
+
+.layanan i {
+  margin: 16px;
+}
+
+.layanan img {
+  height: 87.65px;
+  width: 87.65px;
+  margin: 16px;
+}
+
+.footer {
+  border: solid 3px;
+  width: 99%;
+  color: rgba(128, 128, 128, 0.076);
+}
+
+footer {
+  margin: 1em;
+  padding: 1em 3em;
+  color: #274442;
+}
+
+.feedback {
+  background-color: rgba(219, 219, 219, 0.503);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.feedback .form-feedback {
+  background-color: #fff;
+  color: #0377A8;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 1em 8em;
+  padding: 2em;
+  border-radius: 30px;
+  height: auto;
+}
+
+.feedback .form-feedback textarea {
+  width: 70%;
+  height: 5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f84f;
+  font-size: 18px;
+  resize: none;
+  margin: 1em 0em;
+}
+
+.feedback .form-feedback input {
+  background-color: #27cbf5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  font-size: .8em;
+  width: 160px;
+  height: 40px;
+}
+
+.feedback .form-feedback input:hover {
+  background-color: rgba(39, 204, 245, 0.772);
+}
+
+.feedback .ulasan {
+  text-align: start;
+  margin-top: 3em;
+}
+
+.rating {
+  background-color: rgba(219, 219, 219, 0.503);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.rating .box {
+  text-align: center;
+  background-color: #fff;
+  color: #0377A8;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 1em 8em;
+  padding: 1em 0 3em;
+  border-radius: 30px;
+  height: auto;
+}
+
+.rating .bintang {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotateY(180deg);
+          transform: translate(-50%, -50%) rotateY(180deg);
+  padding-top: 2em;
+}
+
+.rating .bintang label {
+  display: block;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.rating .bintang input {
+  display: none;
+}
+
+.rating .bintang label::before {
+  content: '\f005';
+  font-family: 'Font Awesome 5 Free';
+  position: relative;
+  display: block;
+  color: rgba(227, 227, 227, 0.772);
+}
+
+.rating .bintang label::after {
+  content: '\f005';
+  font-family: 'Font Awesome 5 Free';
+  top: 0;
+  opacity: 0;
+  position: absolute;
+  display: block;
+  color: #0377A8;
+  padding-top: 2em;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.rating .bintang label:hover::after,
+.rating .bintang label:hover ~ label::after,
+.rating .bintang input:checked ~ label::after {
+  opacity: 1;
+}
+
+.rating .alasan textarea {
+  width: 60%;
+  height: 4em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f84f;
+  font-size: 18px;
+  resize: none;
+  margin: 3em 0em 1em;
+}
+
+.rating .alasan ::-webkit-input-placeholder {
+  opacity: .3;
+}
+
+.rating .alasan :-ms-input-placeholder {
+  opacity: .3;
+}
+
+.rating .alasan ::-ms-input-placeholder {
+  opacity: .3;
+}
+
+.rating .alasan ::placeholder {
+  opacity: .3;
+}
+
+.rating .alasan input {
+  background-color: #27cbf5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  font-size: .8em;
+  width: 160px;
+  height: 40px;
+}
+
+.rating .alasan input:hover {
+  background-color: rgba(39, 204, 245, 0.772);
+}
+
+.forum {
+  background-color: rgba(219, 219, 219, 0.503);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.forum .form-forum {
+  background-color: #fff;
+  color: #0377A8;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 1em 8em;
+  padding: 2em;
+  border-radius: 30px;
+  height: auto;
+}
+
+.forum .form-forum ::-webkit-input-placeholder {
+  opacity: .4;
+}
+
+.forum .form-forum :-ms-input-placeholder {
+  opacity: .4;
+}
+
+.forum .form-forum ::-ms-input-placeholder {
+  opacity: .4;
+}
+
+.forum .form-forum ::placeholder {
+  opacity: .4;
+}
+
+.forum .form-forum h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.forum .form-forum h2 {
+  margin: 2em 0 1em;
+}
+
+.forum .form-forum input[type=text] {
+  width: 70%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f84f;
+  font-size: 18px;
+  resize: none;
+}
+
+.forum .form-forum textarea {
+  width: 70%;
+  height: 5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f84f;
+  font-size: 18px;
+  resize: none;
+  margin: 1em 0em;
+}
+
+.forum .form-forum input[type=button] {
+  background-color: #27cbf5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  font-size: .8em;
+  width: 160px;
+  height: 40px;
+}
+
+.forum .form-forum input[type=button]:hover {
+  background-color: rgba(39, 204, 245, 0.772);
+}
+
+.forum .threads {
+  text-align: start;
+  margin-top: 3em;
+  color: #181818;
+  font-weight: 500;
+  font-size: 18px;
+  display: none;
+}
+
+.forum .reply {
+  margin: 1em 0 0;
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

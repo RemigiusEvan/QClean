@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validation.js"></script>
+
+</head>
+<body class="forum">
+    <header>
+        <h1 class="logo">QClean</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="rating.html">Ratings</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="butn"><button class="header">Login</button></a>
+    </header>
+    <div class="form-forum">
+        <form action="" id="form-forum">
+            <h1>Forum</h1><br>
+            <input type="text" name="judul" id="judul" placeholder="Judul Thread"><br>
+            <textarea id="deskripsi" name="deskripsi" placeholder="Deskripsi..."></textarea><br>
+            <input type="button" value="Submit" onclick="validation3()" id="Submit">
+        </form>
+        <h2>Thread Sebelumnya</h2>
+        <div class="threads" id="threads">
+            <strong>-Thread Title-</strong>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aspernatur officia totam, aperiam perferendis consectetur dicta quas, libero molestias rem officiis ullam qui eos quos! Nostrum est ut rem nemo.</p>
+            <input type="button" value="Reply" onclick="reply()">
+        </div>
+        <div class="reply" id="reply">
+            <textarea id="deskripsi" name="deskripsi" placeholder="Tulis pendapat anda..."></textarea><br>
+            <input type="button" value="Submit" id="submit" >
+        </div>
+    </div>
+    <hr class="footer">
+    <footer>
+        <div class="footertext">
+            &copy; QClean CO. , LTD. 2020 ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+</body>
+</html>
